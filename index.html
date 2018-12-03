@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="javascript/main.js"></script>
+	<script type="text/javascript" src="./web3.min.js"></script>
+<!--
+	<script type="text/javascript">
+        window.addEventListener('load', function () {
+			if (typeof web3 !== 'undefined') {
+                console.log('Web3 Detected! ' + web3.currentProvider.constructor.name)
+                window.web3 = new Web3(web3.currentProvider);
+            } else {
+                console.log('No Web3 Detected... using HTTP Provider')
+                window.web3 = new Web3(new Web3.providers.HttpProvider("https://188.190.240.195L8545"));
+            }
+		})</script>
+-->
+</head>
+	<body>
+		<h1>Get Balance</h1>
+		<div>
+			<input type="text" size="50" id="address" placeholder="Enter an address here"/>
+			<button type="button" onclick="getBalance(this);" >OK</button>
+		<br />
+		<br />
+		</div>
+		<div id="output"></div>
+	</body>
+	
+</html>
