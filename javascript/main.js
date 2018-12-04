@@ -12,7 +12,7 @@ function getBalance() {
 				var balance = web3.fromWei(wei, 'ether');
 				document.getElementById("output").innerHTML = balance + " ETH";
 				var gwei = web3.fromWei(wei, 'wei');
-				document.getElementById("output_gwei").innerHTML = gwei.toString(10) + " WEI";
+				document.getElementById("output_wei").innerHTML = wei.toString(10) + " WEI";
 			}
 		})
 	} catch (err) {
