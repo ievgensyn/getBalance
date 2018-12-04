@@ -4,19 +4,10 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="javascript/main.js"></script>
-	<script type="text/javascript" src="./web3.min.js"></script>
-<!--
-	<script type="text/javascript">
-        window.addEventListener('load', function () {
-			if (typeof web3 !== 'undefined') {
-                console.log('Web3 Detected! ' + web3.currentProvider.constructor.name)
-                window.web3 = new Web3(web3.currentProvider);
-            } else {
-                console.log('No Web3 Detected... using HTTP Provider')
-                window.web3 = new Web3(new Web3.providers.HttpProvider("https://188.190.240.195L8545"));
-            }
-		})</script>
--->
+	<script type="text/javascript" src="./bignumber.min.js"></script>
+	<script type="text/javascript" src="./web3-light.js"></script>
+<!--	<script type="text/javascript" src="./web3.min.js"></script>-->
+
 </head>
 	<body>
 		<h1>Get Balance</h1>
@@ -27,6 +18,9 @@
 		<br />
 		</div>
 		<div id="output"></div>
+		<br />
+		<br />
+		<div id="output_gwei"></div>
 	</body>
 	
 </html>
