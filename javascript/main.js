@@ -2,7 +2,7 @@ function getBalance() {
 	'use strict';
 	var Web3 = require('web3');
 	var web3 = new Web3();
-	web3.setProvider(new web3.providers.HttpProvider( "http://188.190.240.195:8545"))
+	web3.setProvider(new web3.providers.HttpProvider())
 	var address = document.getElementById("address").value;
 	
 	try {
